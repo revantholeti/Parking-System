@@ -1,0 +1,116 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-image: url('../images/black_parking.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+}
+.navbar-brand{
+    margin-top:10px;
+}
+
+img{
+    width:300px;
+    height:200px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.card{
+    width:100%;
+    margin-top:20px;
+    background-color: rgb(95, 83, 91,0.7);
+    border-radius: 20px;
+    color:white;
+    box-shadow: 0px 0px 10px 2px white;
+}
+.row{
+    padding:0px;
+}
+.nopadding{
+    padding:0 !important;
+    margin:0 !important;
+}
+.paddings{
+    padding-left:35px;
+}
+
+.lib-row{
+    margin-bottom:5px;
+}
+
+select{
+    background-color: rgb(95, 83, 91,0.7);
+    max-width:300px;
+    font-size: 15px;
+}
+
+input[type=date]{
+    background-color: rgb(95, 83, 91,0.7);
+    font-size: 15px;
+    border:1px solid white;
+}
+
+.navbar-custom {
+    color: #FFFFFF;
+    background-color: rgb(0, 0, 0,0.7);
+}
+@media(max-width:1500px){
+    .navigation{
+        margin-top:50px;
+    }
+}
+@media(max-width:1200px){
+    .paddings{
+        padding-left:90px;
+    }
+    img{
+        width:100%;
+        border-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .navigation{
+        margin-top:50px;
+    }
+}
+@media(max-width:900px){
+    .row{
+        text-align: center;
+    }
+    .card{
+        margin-top:40px;
+    }
+    img{
+        width:100%;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .navbar-custom {
+        color: #FFFFFF;
+        background-color: rgb(0, 0, 0);
+    }
+    .navigation{
+        margin-top:50px;
+    }
+}
+@media(max-width:480px){
+    .row{
+        text-align: center;
+    }
+    .paddings{
+        padding:0px;
+    }
+    .navbar-brand{
+        margin-top:0px;
+    }
+    .navbar-custom {
+        color: #FFFFFF;
+        background-color: rgb(0, 0, 0);
+    }
+    .navigation{
+        margin-top:50px;
+    }
+}
+

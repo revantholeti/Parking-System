@@ -1,0 +1,103 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-image: url('../images/black_parking.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+}
+.navbar-brand{
+    margin-top:10px;
+}
+.navbar-custom {
+    color: #FFFFFF;
+    background-color: rgb(0, 0, 0,0.7);
+}
+label{
+    color:white;
+}
+.box{
+    background-color: rgba(0, 0, 0, 0.493);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px white;
+    padding:10px 20px 10px 20px;
+    margin-top:7%;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.file-upload {
+	position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.file-upload__label {
+  display: block;
+  padding: 1em 2em;
+  color: #fff;
+  background: rgb(255, 174, 0);
+  border-radius: .4em;
+  transition:backgroung .3s;
+  cursor: pointer;
+}
+
+
+#image_button{
+    margin-top:20px;
+    margin-left:20px;
+}
+
+#image_div{
+    border:1px solid white;
+    width:300px;
+    height: 200px;
+    color:white;
+    padding-left:0px;
+}
+
+@media(max-width:600px){
+    .box{
+        margin-top:50px;
+    }
+    .navbar-brand{
+        margin-top:0px;
+    }
+    .navbar-custom {
+        color: #FFFFFF;
+        background-color: rgb(0, 0, 0);
+    }
+    .file-upload__label{
+        margin-top:20px;
+    }
+}
+
+@media(max-width:1200px){
+    .file-upload__label{
+        margin-top:20px;
+    }
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    cursor: pointer;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}

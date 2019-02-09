@@ -1,0 +1,172 @@
+*{
+    padding:0px;
+    margin:0px;
+    height:100%;
+}
+body{
+    height:100%;
+}
+.navbar{
+    height:60px;
+}
+.navbar-brand{
+    margin-top:7px;
+}
+.main{
+    height:100%;
+    width:100%;
+    background-image: url('../images/parking.jpg');
+    background-repeat: no-repeat;
+    filter: blur(2px);
+  -webkit-filter: blur(2px);
+  opacity: 0.9;
+    filter: alpha(opacity=50);
+    
+}
+.bg-text {
+    height: 40%;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(255, 255, 255,0.6); /* Black w/opacity/see-through */
+    color: black;
+    font-weight: bold;
+    border: .15em solid black;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 45%;
+    padding: 20px;
+    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 50px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding-right:5%;
+    padding-left:5%;
+  }
+  .bg-text h1{
+      font-size: 50px;
+  }
+  .typewriter{
+      height: 20%;
+      width:100%;
+      /* margin-left:25%; */
+      margin-top:5%;
+  }
+
+  .typewriter h1 {
+    color: rgb(0, 0, 0);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.03em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+  nav{
+      font-size:25px;
+  }
+
+  .navbar-custom {
+    color: #FFFFFF;
+    background-color: rgb(0, 0, 0,0.7);
+}
+@media(max-width:480px){
+    .navbar-brand{
+        margin-top:0px;
+    }
+}
+
+.nav-tabs{
+    *zoom: 1;
+  }
+
+  .nav-tabs:before,
+  .nav-tabs:after {
+    display: table;
+    content: "";
+  }
+
+  .nav-tabs:after {
+    clear: both;
+  }
+
+  .nav-tabs > li {
+    float: left;
+    line-height: 18px;
+    font-size:15px;
+  }
+
+  .nav-tabs > li > a {
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: 2px;
+    line-height: 14px;
+  }
+
+  .nav-tabs {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .nav-tabs > li {
+    margin-bottom: -1px;
+  }
+
+  .nav-tabs > li > a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 18px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 4px 4px 0 0;
+       -moz-border-radius: 4px 4px 0 0;
+            border-radius: 4px 4px 0 0;
+  }
+
+  .nav-tabs > li > a:hover {
+    border-color: #eeeeee #eeeeee #dddddd;
+  }
+
+  .nav-tabs > .active > a,
+  .nav-tabs > .active > a:hover {
+    color: #555555;
+    cursor: default;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+  }
+  
+  
+  .tab-content.active{
+      display: block;
+  }
+  
+  .tab-content.hide{
+      display: none;
+  }
+  @media(max-width:900px){
+    .navigate{
+        width:40%;
+        margin-bottom:20px;
+    }
+}
+  @media(max-width:480px){
+      .navigate{
+          width:85%;
+          margin-bottom:20px;
+      }
+  }
